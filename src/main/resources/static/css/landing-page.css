@@ -1,0 +1,43 @@
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.intro-header {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../client/img/banner-bg.jpg) no-repeat center center;
+	height: 500px;
+    background-size: cover;
+}
+
+.intro-header h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.intro-header-social-buttons {
+    float: right;
+    margin-top: 0;
+}

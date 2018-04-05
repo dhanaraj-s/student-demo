@@ -1,0 +1,43 @@
+<!-- displaystudent.html -->
+    <div class="jumbotron text-center">
+        <p>{{ message }}</p>
+		<div class="container">          
+			<table class="table display-student">
+			<thead>
+			  <tr>
+				<th>Student Name</th>
+				<th>Age</th>
+				<th>Student ID</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="student in studentArray | orderBy:'age' track by $index" ng-include="getTemplate(student)"></tr>						
+			</tbody>
+		  </table>
+		  <script type="text/ng-template" id="display">
+				<td>{{student.name | uppercase}}</td>
+				<td>{{student.age}}</td>
+				<td>{{student.id}}</td>
+				<td><button class="btn btn-warning" type="button" ng-click="editFun(student);">Edit<span class="glyphicon glyphicon-wrench"></span>
+					</button> 
+					<span class="divider"></span>
+					<button class="btn btn-danger" type="button" ng-click="deleteFun(student);">Delete<span class="glyphicon glyphicon-trash"></span>
+					</button>
+				</td>
+		</script>
+		<script type="text/ng-template" id="edit">
+				<td><input type="text" ng-model="studentArray.selectedstudent.name" class="form-control"></input></td>
+				<td><input type="text" ng-model="studentArray.selectedstudent.age"class="form-control"></input></td>
+				<td><input type="text" ng-model="studentArray.selectedstudent.id" class="form-control"></input></td>
+				<td><button class="btn btn-success" type="button" ng-click="saveFun(studentArray.selectedstudent);">Save
+						<span class="glyphicon glyphicon-floppy-save"></span>
+				</button> 
+				<span class="divider"></span>
+				<button class="btn btn-primary" type="button" ng-click="reset();">Cancel
+						<span class="glyphicon glyphicon-remove"></span>
+				</button>
+			</td>
+		</script>
+	</div>
+</div>
+
