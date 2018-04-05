@@ -1,4 +1,4 @@
-# student-demo
+# Sample Spring Boot Application SPA
 
 This project is a sample Spring Boot app (Web MVC) for a single page application which maintains the data in MongoDB and allows the user to manipulate data by providing options like add/delete/edit student details.
 
