@@ -3,16 +3,16 @@
 This project is a sample Spring Boot app (Web MVC) for a single page application which maintains the data in MongoDB and allows the user to manipulate data by providing options like add/delete/edit student details.
 
 The basic plan for this project is to familiarize with the below technologies,
-    1.	HTML5
-    2.	CSS
-    3.	Bootstrap
-    4.	AngularJs
-    5.	Grunt
-    6.	Spring Boot
-    7.	Restfull services
-    8.	JPA
-    9.	Maven
-    10.	MongoDB
+1.	HTML5
+2.	CSS
+3.	Bootstrap
+4.	AngularJs
+5.	Grunt
+6.	Spring Boot
+7.	Restfull services
+8.	JPA
+9.	Maven
+10.	MongoDB
 
 We can run this project, just the way we run a simple spring boot application. But here I have explicitly generated a war file so that i can deploy it over my tomcat server and check.
 
